@@ -2,7 +2,7 @@
 /* Styles by BlasAST */
 
 /* Reset defaults */
-figure
+body, figure, h2
 {
     margin: 0;
     padding: 0;
@@ -12,9 +12,16 @@ body
     background-color: rgb(34, 25, 25);
 }
 
+:root
+{
+    --fondo: rgb(75, 70, 70);
+    --dark_items: rgb(90, 42, 42);
+}
+
+/* Navbar */
 .navbar
 {
-    background-color: rgb(75, 70, 70);
+    background-color: var(--fondo);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,12 +38,44 @@ body
     border-radius: 15px;
     padding: 10px;
     border-style: none;
+    background-color: var(--dark_items);
 }
 
-.dark_items
+/* Sections */
+
+/* Section without flex and grid */
+.sections
 {
-    background-color: rgb(31, 26, 26);
+    margin-bottom: 20px;
 }
+.sections h2
+{
+    float: left;
+}
+.sections div
+{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.sections button
+{
+    background-color: var(--dark_items);
+    color: white;
+    border-radius: 15px;
+    padding: 2% 4%;
+    border-style: none;
+    margin: 0 1%;
+}
+
+.sections::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Config */
 
 .attribution
 {
@@ -53,4 +92,9 @@ body
 .hidden
 {
     display: none;
+}
+
+.container
+{
+    margin: 0 5%;
 }
