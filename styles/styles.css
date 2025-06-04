@@ -10,6 +10,7 @@ body, figure, h2
 body
 {
     background-color: rgb(34, 25, 25);
+    color: white;
 }
 
 :root
@@ -38,7 +39,6 @@ body
     border-radius: 15px;
     padding: 10px;
     border-style: none;
-    background-color: var(--dark_items);
 }
 
 /* Sections */
@@ -97,4 +97,15 @@ body
 .container
 {
     margin: 0 5%;
+}
+.dark_items
+{
+    background-color: var(--dark_items); 
+}
+
+.active,
+.sections .active
+{
+    background-color: white;
+    color: darkblue;
 }
