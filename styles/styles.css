@@ -2,7 +2,7 @@
 /* Styles by BlasAST */
 
 /* Reset defaults */
-body, figure, h2
+body, figure, h2, h3
 {
     margin: 0;
     padding: 0;
@@ -11,7 +11,11 @@ body
 {
     background-color: rgb(34, 25, 25);
     color: white;
+    min-width: 575px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
 
 :root
 {
@@ -26,7 +30,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2%;
+    padding: 1%;
     margin: 5%;
     border-radius: 15px;
 }
@@ -75,6 +79,63 @@ body
     display: block;
     clear: both;
 }
+
+/* Secciones */
+.cards
+{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(4, 20%);
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+
+section
+{
+    background-color: var(--dark_items);
+    padding: 8%;
+    margin:5% 0;
+    border-radius: 15px;
+}
+
+.cards > section > button:nth-of-type(1)
+{
+    border-color: white;
+    border-radius: 15px;
+    background-color: var(--dark_items);
+    color: white;
+    padding: 2% 5%;
+}
+
+.cards > section > button:last-of-type
+{
+    padding: 0;
+    width: 2.5rem;
+    border-radius: 15px;
+    border-color: transparent;
+    float: right;
+}
+
+/* .cards > section > button:last-of-type:focus
+{
+    background-color: var(--fondo); 
+} */
+
+.cards > section > button:last-of-type > span
+{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 90px;
+    background-color: var(--fondo);
+}
+
+.cards > section > button:last-of-type span:hover
+{
+    background-color: var(--dark_items);
+}
 /* Config */
 
 .attribution
@@ -89,6 +150,7 @@ body
 {
     display: inline-block;
 }
+
 .hidden
 {
     display: none;
