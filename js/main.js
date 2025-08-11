@@ -17,7 +17,7 @@ function events()
 function functionButtons(evt)
 {
         if (evt.target.tagName == "BUTTON" && evt.target.textContent == "Remove")
-                evt.target.parentElement.remove();
+                evt.target.parentElement.parentElement.remove();
         else if (evt.target.tagName == "SPAN")
-            console.log("yaya");
+            evt.target.style.float = "right";
 }

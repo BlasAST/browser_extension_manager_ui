@@ -97,9 +97,12 @@ section
     padding: 8%;
     margin:5% 0;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.cards > section > button:nth-of-type(1)
+.cards > section div button:nth-of-type(1)
 {
     border-color: white;
     border-radius: 15px;
@@ -108,21 +111,16 @@ section
     padding: 2% 5%;
 }
 
-.cards > section > button:last-of-type
+.cards > section div button:last-of-type
 {
     padding: 0;
     width: 2.5rem;
+    height: 1.2rem;
     border-radius: 15px;
     border-color: transparent;
-    float: right;
 }
 
-/* .cards > section > button:last-of-type:focus
-{
-    background-color: var(--fondo); 
-} */
-
-.cards > section > button:last-of-type > span
+.cards > section div button:last-of-type > span
 {
     display: block;
     width: 1rem;
@@ -131,9 +129,16 @@ section
     background-color: var(--fondo);
 }
 
-.cards > section > button:last-of-type span:hover
+.cards > section div button:last-of-type span:hover
 {
     background-color: var(--dark_items);
+}
+
+.cards section div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* Config */
 
