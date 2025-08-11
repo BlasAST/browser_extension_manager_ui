@@ -84,12 +84,11 @@ body
 .cards
 {
     display: grid;
-    height: auto;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: repeat(4, 20%);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: space-between;
-    align-content: space-around;
-    align-items: center;
+    justify-items: normal;
+    align-items: normal;
+    height: auto;
 }
 
 section
